@@ -1,5 +1,6 @@
 li {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Header */
@@ -26,6 +27,7 @@ li {
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
   font-size: 18px;
+  
 }
 
 .header li:hover {
@@ -46,7 +48,9 @@ li {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  
 }
+
 
 /* Menu Icon */
 .header .menu-icon {
@@ -117,9 +121,11 @@ li {
 @media (min-width: 48em) {
   .header li {
     float: left;
+    
   }
   .header li a {
     padding: 20px 30px;
+   
   }
   .header .menu {
     clear: none;

@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import '../app/styles/certificate.css';
 import Image from 'next/image';
@@ -23,22 +25,22 @@ const certificates = [
     description: 'Techforce Pakistan - JS Completion Certification',
   },
   {
-    id: 4,
+    id: 3,
     title: 'Frontend Internship 01',
     img: '/C5.png',
     description: 'First Internship Completion Certification',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Frontend Internship 02',
     img: '/C6.png',
     description: 'Second Internship Completion Certification',
   },
   {
     id: 5,
-    title: 'Frontend Internship 02',
+    title: 'Typescript Certificates',
     img: '/C6.jpg',
-    description: 'Second Internship Completion Certification',
+    description: 'Typescript Exam Preparation Certification',
   },
   {
     id: 6,
