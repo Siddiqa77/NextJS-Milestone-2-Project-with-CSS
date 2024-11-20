@@ -1,0 +1,51 @@
+.heading-container {
+  text-align: center;
+  padding-bottom: 2rem;
+  line-height: 3rem;
+  font-size: 3rem;
+}
+
+.heading-title {
+  border-bottom: 4px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  font-size: 2.5rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.heading-title:hover {
+  border-color: rgb(190, 30, 30);
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .heading-container {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  .heading-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-container {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .heading-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-container {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .heading-title {
+    font-size: 1.5rem;
+  }
+}
