@@ -27,13 +27,13 @@ const certificates = [
   {
     id: 3,
     title: 'Frontend Internship 01',
-    img: '/C5.png',
+    img: '/C4.png',
     description: 'First Internship Completion Certification',
   },
   {
     id: 4,
     title: 'Frontend Internship 02',
-    img: '/C6.png',
+    img: '/C5.png',
     description: 'Second Internship Completion Certification',
   },
   {
