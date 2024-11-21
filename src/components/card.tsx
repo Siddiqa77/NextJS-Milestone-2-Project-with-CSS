@@ -1,4 +1,7 @@
-import React from "react";
+
+"use client";
+
+import React, { useEffect, useState } from "react";
 import "../app/styles/card.css";
 import Image from "next/image";
 
@@ -10,16 +13,29 @@ interface propsType {
 }
 
 const Card: React.FC<propsType> = ({ title, description, img, tags }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth >= 640);
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
+
+    return () => {
+      window.removeEventListener("resize", handleResize); 
+    };
+  }, []);
+
   return (
     <div
-      className={`card ${window.innerWidth >= 640 ? "card-sm" : ""}`}
+      className={`card ${isSmallScreen ? "card-sm" : ""}`}
       data-aos="zoom-in-up"
     >
       <div>
         <Image
-          className={`card-image ${
-            window.innerWidth >= 640 ? "card-image-sm" : ""
-          }`}
+          className={`card-image ${isSmallScreen ? "card-image-sm" : ""}`}
           src={img}
           alt={title}
           width={350}
